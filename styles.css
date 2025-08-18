@@ -1,0 +1,15 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+html {
+    
+	background-color: rgba(255, 234, 115, 0.404);
+}
+header {
+
+    font-size: 300%;
+}
+section {
+    font-size: x-large;
+}
