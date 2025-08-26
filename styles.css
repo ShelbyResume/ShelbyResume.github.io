@@ -8,8 +8,14 @@ html {
 }
 header {
 
-    font-size: 300%;
+    font-size: 200%;
 }
 section {
     font-size: x-large;
+}
+h1 {
+	font-size: 200%;
+}
+h2{
+	font-size: 100%
 }
