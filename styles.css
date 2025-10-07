@@ -14,13 +14,22 @@ section {
     font-size: x-large;
 }
 h1 {
-
 	font-size: 200%;
 }
-h2{
-	font-size: 100%;
+h3{
 	float: left;
 }
-h3{
-	justify-content: right;
+table, th, td {
+  border: 1px dotted black;
+}
+
+tr:nth-child(even) {
+	background-color:lightgray;
+}
+tr:nth-child(odd) {
+	background-color:white;
+}
+tr:first-child {
+	background-color: brown;
+	color: white;
 }
