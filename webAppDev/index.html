@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Service Worker Example</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="manifest" href="/workfiles_new/sw1/manifest.json">
+    <link rel="manifest" href="/webAppDev/manifest.json">
 </head>
 <heading>
     Key characteristics of Progressive Web Applications
@@ -20,7 +20,7 @@
 
     <script>
         if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('/workfiles_new/sw1/sw.js')
+            navigator.serviceWorker.register('/webAppDev/sw.js')
                 .then(registration => {
                     console.log('Service Worker registered with scope:', registration.scope);
                 })
