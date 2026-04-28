@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Worker Example</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="/workfiles_new/sw1/manifest.json">
+</head>
+<heading>
+    Key characteristics of Progressive Web Applications
+</heading>
+<br>
+<body>
+<p>Progressive Web Applications are reliable, fast, and engaging. They are reliable thanks to service workers allowing them to be accessed offline once they are accessed once and cached online. They are fast, an important metric because 53% of users will abandon a website that takes longer than 3 seconds to load. They are engaging because they are customizable and allow the implementation of push notifications.</p>
+<p>Another part of PWA's is the Web App Manifest, a simple JSON file that gives developers  the ability to control how the application will appear to the user. Some properties include short_name, icons, start_url, and background_color to choose how the splash screen appears when the app is launched. Others include display properites such as fullscreen, standalopne, minimal-ui, and broswer, to choose how the browser UI is customized on launch.</p>
+
+    <h1>Progressive Web Applications Homework 4</h1>
+    <p>This page should work offline thanks to the service worker.</p>
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/workfiles_new/sw1/sw.js')
+                .then(registration => {
+                    console.log('Service Worker registered with scope:', registration.scope);
+                })
+                .catch(error => {
+                    console.error('Service Worker registration failed:', error);
+                });
+        }
+    </script>
+    <script>
+    function selectBackgroundColor() {
+        const main = document.getElementById("background").value;
+
+        if (main === "lightblue") {
+            document.body.style.backgroundImage = "url('lightblue.jpg')";
+        } else if (main === "lightgold") {
+            document.body.style.backgroundImage = "url('lightgold.jpg')";
+        } else {
+            document.body.style.backgroundImage = "";
+        }
+        document.body.style.backgroundSize = "cover";
+        document.body.style.backgroundRepeat = "no-repeat";
+    }
+</script>
+
+<form id="rightForm">
+<strong>Background Color</strong><br>
+<select id="background" onchange="selectBackgroundColor()">
+    <option value="none">Choose Color</option>
+    <option value="lightblue">Light Blue</option>
+    <option value="lightgold">Light Gold</option>
+</select>
+
+</form>
+</body>
+</html>
