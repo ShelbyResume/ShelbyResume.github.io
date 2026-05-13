@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparing Hybrid Solutions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Comparing Hybrid Solutions - 3 Options</h1>
+    <h2>Flutter, Ionic, React Native</h2>
+    
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/hw5/sw.js')
+                .then(registration => {
+                    console.log('Service Worker registered with scope:', registration.scope);
+                })
+                .catch(error => {
+                    console.error('Service Worker registration failed:', error);
+                });
+        }
+    </script>
+    <div class="accordion">
+    
+    <details>
+      <summary>React Native</summary>
+      <div class="content">
+        <a href="https://reactnative.dev/docs/environment-setup"><img src="/hw5/react_native_logo.png" height="100" width="auto"></a>
+        <p>Pros: Developed by Facebook in 2015, React Native is based on Facebook's web library React JS and used by companies such as Walmart, Tesla, and Instagram.</p>
+        <p>Cons: To be determined if I can ever install one of these. Feeling stupid.</p>
+        <p><a href="https://reactnative.dev/docs/environment-setup">Get Started Here</a></p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Flutter</summary>
+      <div class="content">
+        <a href="https://docs.flutter.dev/learn/pathway"><img src="/hw5/flutter_logo.png" height="100" width="auto"></a>
+        <p>Pros: Developed by Google with Dart 3.0 releseased 2023, this is a project we know has good developer support.</p>
+        <p>Cons: Flutter would require our programmers to learn Dart programming, and it was very difficult to install correctly.</p>
+        <p><a href="https://docs.flutter.dev/learn/pathway">Get Started Here</a></p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Ionic</summary>
+      <div class="content">
+                <a href="https://ionicframework.com/"><img src="/hw5/ionic_logo.png" height="100" width="auto"></a>
+        <p>Pros: Ionic is an open source, hybrid app development software allowing the user to choose any user interface framework they want, such as Angular, React or Vue.js.</p>
+      <p>Cons: Ionic is not backed by any major company like Google's Flutter or Facebooks' React Native. It is also under the MIT license, not the GNU license, even though it is open source. Finally, on VS Code's extension website it says Ionic has been deprecated in favor of the WebNative.dev extension.</p><p><a href="https://ionicframework.com/">Get Started Here</a></p>
+    </div>
+    </details>
+
+  </div>
+</body>
